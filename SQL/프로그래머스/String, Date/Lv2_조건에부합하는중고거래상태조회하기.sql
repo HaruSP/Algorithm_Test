@@ -17,3 +17,13 @@ where 1=1
     and date_format(t.CREATED_DATE, '%Y-%m-%d') = '2022-10-05'
 order by t.BOARD_ID desc
 ;
+
+-- date_format 형식 : date_format(date_column, format_string)
+-- %Y : 4자리 연도, %y : 2자리 연도
+-- %m : 월
+-- %d : 일
+-- %H : 24시간, %h : 12시간
+-- %i : 분
+-- %s : 초
+-- %W :요일(Monday), %a : 요일 약자(Mon), %w : 요일(sun = 0 ~ sat=6)
+-- %M : 월(January), %b : 월 약자(Jan)
