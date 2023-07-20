@@ -8,3 +8,12 @@ def solution(i, j, k):
             if char == str(k):
                 answer += 1
     return answer
+
+
+# 확인
+if __name__ == "__main__":  
+    input_i = 10
+    input_j = 50
+    input_k = 5
+    actual_output = solution(input_i,input_j,input_k)
+    print(f"k 횟수: {actual_output}")

@@ -14,3 +14,10 @@ def solution(chicken):
             break
             
     return answer
+
+
+# 확인
+if __name__ == "__main__":  
+    input_num = 100
+    actual_output = solution(input_num)
+    print(f"서비스 수: {actual_output}")

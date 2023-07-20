@@ -15,3 +15,11 @@ def solution(A, B):
             return i
         
     return answer
+
+
+# 확인
+if __name__ == "__main__":
+    input_A = "apple"
+    input_B = "elppa"
+    actual_output = solution(input_A,input_B)
+    print(f"최소 횟수: {actual_output}")

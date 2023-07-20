@@ -17,3 +17,11 @@ def solution(num, total):
     answer = [num + middle_num for num in range(start_num, end_num)]
     
     return answer
+
+
+# 확인
+if __name__ == "__main__":  
+    input_num = 5
+    input_total = 15
+    actual_output = solution(input_num,input_total)
+    print(f"정수 배열: {actual_output}")

@@ -8,3 +8,10 @@ def solution(order):
         if i in ['3','6','9']:
             answer += 1
     return answer
+
+
+# 확인
+if __name__ == "__main__":
+    input_order = 29423
+    actual_output = solution(input_order)
+    print(f"박수 횟수: {actual_output}")

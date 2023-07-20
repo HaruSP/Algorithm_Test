@@ -17,3 +17,10 @@ def solution(quiz):
         
         answer.append('O' if left == int(right) else 'X')
     return answer
+
+
+# 확인
+if __name__ == "__main__":  
+    input_quiz = ["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]	
+    actual_output = solution(input_quiz)
+    print(f"OX 배열: {actual_output}")

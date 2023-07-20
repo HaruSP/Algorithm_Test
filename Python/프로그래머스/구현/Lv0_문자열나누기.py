@@ -9,18 +9,26 @@
 
 # 문자열 s가 매개변수로 주어질 때, 위 과정과 같이 문자열들로 분해하고, 분해한 문자열의 개수를 return 하는 함수 solution을 완성하세요.
 
+
 def solution(s):
     answer = 0
     cnt1 = 0
     cnt2 = 0
-    
+
     for i in s:
         if cnt1 == cnt2:
             answer += 1
             pre = i
-        
+
         if i == pre:
             cnt1 += 1
         else:
             cnt2 += 1
     return answer
+
+
+# 확인
+if __name__ == "__main__":
+    input_str = "banana"
+    actual_output = solution(input_str)
+    print(f"문자열 개수: {actual_output}")

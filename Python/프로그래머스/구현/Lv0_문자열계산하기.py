@@ -3,7 +3,7 @@
 # 문자열 my_string이 매개변수로 주어질 때, 수식을 계산한 값을 return 하는 solution 함수를 완성해주세요.
 
 # Sol 1
-def solution(my_string):
+def solution1(my_string):
     answer = 0
     operator = ""
     
@@ -20,8 +20,16 @@ def solution(my_string):
     return answer
 
 # Sol 2
-def solution(my_string):
+def solution2(my_string):
     return eval(my_string)
 
 # eval : eval 함수는 매개변수로 식을 받아서 실행하는 함수이다.
 # 단, SQL Injection 등 보안문제에 취약하므로 실코드에서 사용
+
+
+
+# 확인
+if __name__ == "__main__":
+    input_str = "3 + 4"
+    actual_output = solution1(input_str)
+    print(f"수식 값: {actual_output}")

@@ -3,7 +3,7 @@
 # my_string안의 자연수들의 합을 return하도록 solution 함수를 완성해주세요.
 
 # sol1)
-def solution(my_string):
+def solution1(my_string):
     answer = 0
     temp = ""
     for char in my_string:
@@ -16,6 +16,13 @@ def solution(my_string):
     return answer + int(temp) if temp else answer
 
 # sol2)
-def solution(my_string):
+def solution2(my_string):
     s = ''.join(char if char.isdigit() else ' ' for char in my_string)
     return sum(int(char) for char in s.split())
+
+
+# 확인
+if __name__ == "__main__":  
+    input_str = "aAb1B2cC34oOp"
+    actual_output = solution1(input_str)
+    print(f"자연수 합: {actual_output}")

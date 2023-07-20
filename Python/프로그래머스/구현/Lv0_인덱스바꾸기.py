@@ -8,3 +8,12 @@ def solution(my_string, num1, num2):
     # print(string)
     answer = ''.join(string)
     return answer
+
+
+# 확인
+if __name__ == "__main__":  
+    input_str = "I love you"
+    input_num1 = 3
+    input_num2 = 6
+    actual_output = solution(input_str,input_num1,input_num2)
+    print(f"after str: {actual_output}")

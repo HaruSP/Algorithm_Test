@@ -8,3 +8,10 @@ def solution(n):
         n //= 10
 
     return answer
+
+
+# 확인
+if __name__ == "__main__":  
+    input_num = 987
+    actual_output = solution(input_num)
+    print(f"총합: {actual_output}")
