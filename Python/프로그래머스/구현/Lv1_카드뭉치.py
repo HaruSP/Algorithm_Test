@@ -30,4 +30,4 @@ if __name__ == "__main__":
     input_cards2 = ["want", "to"]
     input_goal  = ["i", "want", "to", "drink", "water"]
     actual_output = solution(input_cards1,input_cards2,input_goal)
-    print(f"OX 배열: {actual_output}")
+    print(f"OX 여부: {actual_output}")
