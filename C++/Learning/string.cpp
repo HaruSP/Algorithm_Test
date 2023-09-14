@@ -16,7 +16,7 @@ int main(){
 	// size_t find (const string& str, size_t pos = 0);
 	auto it = a.find("love");
 	if (it != string::npos){
-	cout << "Æ÷ÇÔµÇ¾î ÀÖ´Ù." << '\n';
+	cout << "ï¿½ï¿½ï¿½ÔµÇ¾ï¿½ ï¿½Ö´ï¿½." << '\n';
 	}
 	cout << it << '\n';
 	cout << string::npos << '\n';
